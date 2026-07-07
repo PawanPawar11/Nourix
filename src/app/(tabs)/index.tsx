@@ -1,23 +1,14 @@
 import HomeHeader from "@/components/HomeHeader";
+import MacroGrid from "@/components/MacroGrid";
 import { globalStyles } from "@/styles/global";
-import { Link } from "expo-router";
 import { ScrollView, Text } from "react-native";
 
 export default function HomeScreen() {
   return (
     <ScrollView style={globalStyles.container}>
-      <Text style={globalStyles.title}>MacroZone</Text>
+      <Text style={globalStyles.title}>Nourix</Text>
       <HomeHeader />
-      <Link href="/meals" style={{ fontSize: 18, color: "#007bff" }}>
-        Go to Meals
-      </Link>
-      <Link
-        href="/../../trash/index"
-        // seems like you can not access the routes outside the "app" folder
-        style={{ fontSize: 18, color: "#007bff" }}
-      >
-        Go to Trash Index
-      </Link>
+      <MacroGrid />
     </ScrollView>
   );
 }
