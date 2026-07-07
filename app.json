@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Nourix",
-    "slug": "Nourix",
+    "slug": "nourix",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -38,6 +38,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "83088072-1719-4171-85d9-f7b87120efa0"
+      }
+    },
+    "owner": "pawanpawars-team"
   }
 }
